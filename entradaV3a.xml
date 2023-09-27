@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+   <listaDrones>
+      <dron>DronY</dron>
+      <dron>DronX</dron>
+      <dron>DronW</dron>
+      <dron>DronZ</dron>
+      <dron>DronA</dron>
+      <dron>DronB</dron>
+      <dron>DronR</dron>
+      <dron>DronS</dron>
+    </listaDrones>
+    <listaSistemasDrones>
+        <sistemaDrones nombre="SD1">
+            <alturaMaxima>7</alturaMaxima>
+            <cantidadDrones>3</cantidadDrones>
+            <contenido>
+                <dron>DronX</dron>
+                <alturas>
+                    <altura valor="1">A</altura>
+                    <altura valor="2">I</altura>
+                    <altura valor="3">D</altura>
+                    <altura valor="4">F</altura>
+                    <altura valor="5">I</altura>
+                    <altura valor="6">J</altura>
+                    <altura valor="7">K</altura>
+                </alturas>
+            </contenido>
+            <contenido>
+                <dron>DronY</dron>
+                <alturas>
+                    <altura valor="1">2</altura>
+                    <altura valor="2">C</altura>
+                    <altura valor="3">P</altura>
+                    <altura valor="4">G</altura>
+                    <altura valor="5">L</altura>
+                    <altura valor="6">M</altura>
+                    <altura valor="7">N</altura>
+                </alturas>
+            </contenido>
+            <contenido>
+                <dron>DronZ</dron>
+                <alturas>
+                    <altura valor="1">B</altura>
+                    <altura valor="2">C</altura>
+                    <altura valor="3">E</altura>
+                    <altura valor="4">H</altura>
+                    <altura valor="5">O</altura>
+                    <altura valor="6">P</altura>
+                    <altura valor="7">Q</altura>
+                </alturas>
+            </contenido>
+        </sistemaDrones>
+        <sistemaDrones nombre="SDF">
+            <alturaMaxima>1</alturaMaxima>
+            <cantidadDrones>4</cantidadDrones>
+            <contenido>
+                <dron>DronW</dron>
+                <alturas>
+                    <altura valor="1">I</altura>
+                </alturas>
+            </contenido>
+            <contenido>
+                <dron>DronX</dron>
+                <alturas>
+                    <altura valor="1">P</altura>
+                </alturas>
+            </contenido>
+            <contenido>
+                <dron>DronY</dron>
+                <alturas>
+                    <altura valor="1">C</altura>
+                </alturas>
+            </contenido>
+            <contenido>
+                <dron>DronZ</dron>
+                <alturas>
+                    <altura valor="1">2</altura>
+                </alturas>
+            </contenido>
+        </sistemaDrones>
+        <sistemaDrones nombre="SDG">
+            <alturaMaxima>20</alturaMaxima>
+            <cantidadDrones>8</cantidadDrones>
+            <contenido>
+                <dron>DronA</dron>
+                <alturas>
+                    <altura valor="1">A</altura>
+                    <altura valor="2">B</altura>
+                    <altura valor="3">C</altura>
+                    <altura valor="4">D</altura>
+                    <altura valor="5">E</altura>
+                    <altura valor="6">F</altura>
+                    <altura valor="7">G</altura>
+                    <altura valor="8">H</altura>
+                    <altura valor="9">I</altura>
+                    <altura valor="10">J</altura>
+                    <altura valor="11">K</altura>
+                    <altura valor="12">L</altura>
+                    <altura valor="13">M</altura>
+                    <altura valor="14">N</altura>
+                    <altura valor="15">O</altura>
+                    <altura valor="16">P</altura>
+                    <altura valor="17">Q</altura>
+                    <altura valor="18">R</altura>
+                    <altura valor="19">S</altura>
+                    <altura valor="20">T</altura>
+                </alturas>
+            </contenido>
+            <contenido>
+                <dron>DronB</dron>
+                <alturas>
+                    <altura valor="1">R</altura>
+                    <altura valor="2">S</altura>
+                    <altura valor="3">2</altura>
+                    <altura valor="4">3</altura>
+                    <altura valor="5">I</altura>
+                    <altura valor="6">J</altura>
+                    <altura valor="7">K</altura>
+                    <altura valor="8">A</altura>
+                    <altura valor="9">B</altura>
+                    <altura valor="10">C</altura>
+                    <altura valor="11">D</altura>
+                    <altura valor="12">5</altura>
+                    <altura valor="13">7</altura>
+                    <altura valor="14">O</altura>
+                    <altura valor="15">P</altura>
+                    <altura valor="16">E</altura>
+                    <altura valor="17">4</altura>
+                    <altura valor="18">F</altura>
+                    <altura valor="19">G</altura>
+                    <altura valor="20">W</altura>
+                </alturas>
+            </contenido>
+            <contenido>
+                <dron>DronR</dron>
+                <alturas>
+                    <altura valor="1">A</altura>
+                    <altura valor="2">B</altura>
+                    <altura valor="3">C</altura>
+                    <altura valor="4">D</altura>
+                    <altura valor="5">E</altura>
+                    <altura valor="6">F</altura>
+                    <altura valor="7">G</altura>
+                    <altura valor="8">H</altura>
+                    <altura valor="9">I</altura>
+                    <altura valor="10">J</altura>
+                    <altura valor="11">K</altura>
+                    <altura valor="12">L</altura>
+                    <altura valor="13">M</altura>
+                    <altura valor="14">N</altura>
+                    <altura valor="15">O</altura>
+                    <altura valor="16">P</altura>
+                    <altura valor="17">Q</altura>
+                    <altura valor="18">R</altura>
+                    <altura valor="19">S</altura>
+                    <altura valor="20">T</altura>
+                </alturas>
+            </contenido>
+            <contenido>
+                <dron>DronS</dron>
+                <alturas>
+                    <altura valor="1">Z</altura>
+                    <altura valor="2">Y</altura>
+                    <altura valor="3">X</altura>
+                    <altura valor="4">W</altura>
+                    <altura valor="5">V</altura>
+                    <altura valor="6">U</altura>
+                    <altura valor="7">T</altura>
+                    <altura valor="8">S</altura>
+                    <altura valor="9">R</altura>
+                    <altura valor="10">Q</altura>
+                    <altura valor="11">P</altura>
+                    <altura valor="12">O</altura>
+                    <altura valor="13">N</altura>
+                    <altura valor="14">M</altura>
+                    <altura valor="15">L</altura>
+                    <altura valor="16">K</altura>
+                    <altura valor="17">J</altura>
+                    <altura valor="18">I</altura>
+                    <altura valor="19">H</altura>
+                    <altura valor="20">G</altura>
+                </alturas>
+            </contenido>
+            <contenido>
+                <dron>DronW</dron>
+                <alturas>
+                    <altura valor="1">N</altura>
+                    <altura valor="2">B</altura>
+                    <altura valor="3">R</altura>
+                    <altura valor="4">9</altura>
+                    <altura valor="5">E</altura>
+                    <altura valor="6">W</altura>
+                    <altura valor="7">C</altura>
+                    <altura valor="8">T</altura> 
+                    <altura valor="9">Y</altura>
+                    <altura valor="10">U</altura>
+                    <altura valor="11">I</altura>
+                    <altura valor="12">O</altura>
+                    <altura valor="13">P</altura>
+                    <altura valor="14">3</altura>
+                    <altura valor="15">X</altura>
+                    <altura valor="16">F</altura>
+                    <altura valor="17">G</altura>
+                    <altura valor="18">H</altura>
+                    <altura valor="19">J</altura>
+                    <altura valor="20">K</altura>
+                </alturas>
+            </contenido>
+            <contenido>
+                <dron>DronX</dron>
+                <alturas>
+                    <altura valor="1">L</altura>
+                    <altura valor="2">M</altura>
+                    <altura valor="3">N</altura>
+                    <altura valor="4">O</altura>
+                    <altura valor="5">P</altura>
+                    <altura valor="6">Q</altura>
+                    <altura valor="7">R</altura>
+                    <altura valor="8">S</altura>
+                    <altura valor="9">T</altura>
+                    <altura valor="10">U</altura>
+                    <altura valor="11">V</altura>
+                    <altura valor="12">W</altura>
+                    <altura valor="13">X</altura>
+                    <altura valor="14">Y</altura>
+                    <altura valor="15">Z</altura>
+                    <altura valor="16">A</altura>
+                    <altura valor="17">B</altura>
+                    <altura valor="18">C</altura>
+                    <altura valor="19">D</altura>
+                    <altura valor="20">E</altura>
+                </alturas>
+            </contenido>
+            <contenido>
+                <dron>DronY</dron>
+                <alturas>
+                    <altura valor="1">A</altura>
+                    <altura valor="2">Z</altura>
+                    <altura valor="3">B</altura>
+                    <altura valor="4">Y</altura>
+                    <altura valor="5">C</altura>
+                    <altura valor="6">X</altura>
+                    <altura valor="7">D</altura>
+                    <altura valor="8">W</altura> 
+                    <altura valor="9">E</altura>
+                    <altura valor="10">V</altura>
+                    <altura valor="11">F</altura>
+                    <altura valor="12">U</altura>
+                    <altura valor="13">G</altura>
+                    <altura valor="14">T</altura>
+                    <altura valor="15">H</altura>
+                    <altura valor="16">S</altura>
+                    <altura valor="17">I</altura>
+                    <altura valor="18">R</altura>
+                    <altura valor="19">J</altura>
+                    <altura valor="20">Q</altura>
+                </alturas>
+            </contenido>
+            <contenido>
+                <dron>DronZ</dron>
+                <alturas>
+                    <altura valor="1">J</altura>
+                    <altura valor="2">Q</altura>
+                    <altura valor="3">I</altura>
+                    <altura valor="4">R</altura>
+                    <altura valor="5">H</altura>
+                    <altura valor="6">S</altura>
+                    <altura valor="7">G</altura>
+                    <altura valor="8">T</altura>
+                    <altura valor="9">F</altura>
+                    <altura valor="10">U</altura>
+                    <altura valor="11">E</altura>
+                    <altura valor="12">V</altura>
+                    <altura valor="13">D</altura>
+                    <altura valor="14">W</altura>
+                    <altura valor="15">C</altura>
+                    <altura valor="16">X</altura>
+                    <altura valor="17">B</altura>
+                    <altura valor="18">Y</altura>
+                    <altura valor="19">A</altura>
+                    <altura valor="20">Z</altura>
+                </alturas>
+            </contenido>
+        </sistemaDrones>
+    </listaSistemasDrones>
+    <listaMensajes>
+        <Mensaje nombre="msg">
+            <sistemaDrones>SD1</sistemaDrones>
+            <instrucciones>
+                <instruccion dron="DronX">2</instruccion>
+                <instruccion dron="DronY">3</instruccion>
+                <instruccion dron="DronZ">2</instruccion>
+                <instruccion dron="DronY">1</instruccion>
+            </instrucciones>
+        </Mensaje>
+        <Mensaje nombre="msg2">
+            <sistemaDrones>SDF</sistemaDrones>
+            <instrucciones>
+                <instruccion dron="DronW">1</instruccion>
+                <instruccion dron="DronX">1</instruccion>
+                <instruccion dron="DronY">1</instruccion>
+                <instruccion dron="DronZ">1</instruccion>
+            </instrucciones>
+        </Mensaje>
+        <Mensaje nombre="msg3">
+            <sistemaDrones>SDG</sistemaDrones>
+            <instrucciones>
+                <instruccion dron="DronA">7</instruccion>
+                <instruccion dron="DronB">10</instruccion>
+                <instruccion dron="DronR">2</instruccion>
+                <instruccion dron="DronS">5</instruccion>
+                <instruccion dron="DronW">16</instruccion>
+                <instruccion dron="DronX">1</instruccion>
+                <instruccion dron="DronY">7</instruccion>
+                <instruccion dron="DronZ">19</instruccion>
+                <instruccion dron="DronA">13</instruccion>
+                <instruccion dron="DronB">4</instruccion>
+                <instruccion dron="DronR">5</instruccion>
+                <instruccion dron="DronS">16</instruccion>
+                <instruccion dron="DronW">7</instruccion>
+                <instruccion dron="DronX">18</instruccion>
+                <instruccion dron="DronY">9</instruccion>
+                <instruccion dron="DronZ">10</instruccion>
+            </instrucciones>
+        </Mensaje>
+        <Mensaje nombre="msg4">
+            <sistemaDrones>SDG</sistemaDrones>
+            <instrucciones>
+                <instruccion dron="DronA">8</instruccion>
+                <instruccion dron="DronB">1</instruccion>
+                <instruccion dron="DronR">6</instruccion>
+                <instruccion dron="DronS">3</instruccion>
+                <instruccion dron="DronW">2</instruccion>
+                <instruccion dron="DronX">5</instruccion>
+                <instruccion dron="DronY">4</instruccion>
+                <instruccion dron="DronZ">7</instruccion>
+            </instrucciones>
+        </Mensaje>
+    </listaMensajes>
+</config>
