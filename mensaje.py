@@ -16,11 +16,3 @@ class Mensaje():
                 tmp = tmp.siguiente            
             tmp.siguiente = Mensaje(pulso)
 
-    # def agregar(self, nombre):        
-    #     if self.nombre == None:            
-    #         self.nombre = nombre        
-    #     else:            
-    #         tmp = self            
-    #         while tmp.siguiente != None:                
-    #             tmp = tmp.siguiente            
-    #         tmp.siguiente = ListaDrones(nombre)

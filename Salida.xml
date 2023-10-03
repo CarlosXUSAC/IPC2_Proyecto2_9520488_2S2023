@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<Salida>
+  <listaMensajes>
+    <mensaje nombre="msg3">
+      <sistemaDrones>[valorAlfanumerico]</sistemaDrones>
+      <tiempoOptimo>[valorNumerico]</tiempoOptimo>
+      <mensajeRecibido>[valorAlfanumerico]</mensajeRecibido>
+      <instrucciones>
+        <tiempo valor="27">
+          <acciones>
+            <dron nombre="valorAlfanumerico">[valorAccionDron]</dron>
+          </acciones>
+        </tiempo>
+      </instrucciones>
+    </mensaje>
+  </listaMensajes>
+</Salida>

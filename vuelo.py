@@ -1,38 +1,30 @@
 import xml.etree.ElementTree as ET
+import xml.dom.minidom as minidom
 from time import sleep
 import sys
 import os
 from mensaje import Mensaje
 from nodoDrones import ListaDrones
 
-# text = "aun me parece gracioso el chavo"
-# for c in text:
-#     print(c, end='')
-#     sys.stdout.flush()
-#     sleep(0.5)
+
 tree = ET.parse('entradaV3a.xml')
 root = tree.getroot()
 
 cont = 1
 cont2 = 0
 cont3 = 0   
-time = 0.9
+time = 0.2
 reloj = 1
 sistema = ListaDrones(None)
 
 
 mensaje = Mensaje(None)
-mensaje.agregar(16)
-mensaje.agregar(14)
-mensaje.agregar(18)
-mensaje.agregar(20)
-mensaje.agregar(0)
+# mensaje.agregar(16)
+# mensaje.agregar(14)
+# mensaje.agregar(18)
+# mensaje.agregar(20)
+# mensaje.agregar(0)
 
-# tmp = mensaje
-# while tmp != None:
-#     print(f'(',cont2+1,')  ',tmp.pulso)
-#     tmp = tmp.siguiente              
-#     cont2 += 1
 
 os.system('cls')
 
@@ -60,8 +52,7 @@ def imprimir2(self):
     for j in range(20):
         for i in range(8):
             if r == cont:
-                print("\033[0;33m"+"[ █ ]"+'\033[0;m', end='')  # 1;32m Azul 1;31m Rojo 1;34m light blue
-                #print('[ X ]', end='')
+                print("\033[0;33m"+"[ █ ]"+'\033[0;m', end='')  # 1;32m Azul 1;31m Rojo 1;34m light blue                
             else:
                 print('[   ]', end='')
             cont += 1        
@@ -73,73 +64,20 @@ def imprimir2(self):
     sleep(time)
     os.system('cls')
 
-# imprimir(2)
-# imprimir2(16)
-# imprimir2(15)
-# imprimir2(18)
-# imprimir(1)
-# imprimir2(20)
-# imprimir(1)
 
-# print(root[1][0][0].text)
-# print(root[1][0][1].text)
-# print(root[2][0].get('nombre'))
-# print(root[2][0][1].tag)
-
-# V3a
-# print(root[1][2][0].tag) 
-# print(root[1][2][0].text)
-# print(root[1][2][1].tag)
-# print(root[1][2][1].text) # Sistema de Drones SDG
-
-# print(root[2][2].get('nombre')) # Mensaje "msg" root[2][0]  "msg2" root[2][1]  "msg3" root[2][2]    "msg4" root[2][3]
-
-n = int(root[1][2][0].text) * int(root[1][2][1].text)
-# print(n)
+# n = int(root[1][2][0].text) * int(root[1][2][1].text)
 
 
-# r = int (root[2][0][1][0].text)
-# s = int(root[2][0][1][1].text)
-# t = int(root[2][0][1][2].text)
-# u = int(root[2][0][1][3].text)
-
-# imprimir(r)
-# imprimir2(n-1-r*2)
-# imprimir2(n-1-s*2)
-# imprimir2(n-1-t)
-# x = abs(s-u)
-# imprimir(x)
-# imprimir2(n-1-u*2)
-
-# imprimir(6)
-# imprimir2(105)
-# imprimir(2)
-# imprimir2(82)
-# imprimir2(147)
-
-# imprimir2(124)
-# imprimir(3)
-# imprimir2(37)
-# imprimir2(158)
-
-# imprimir2(111)
-
-# imprimir2(16)
-# imprimir2(57)
-# imprimir2(130)
-# imprimir2(123)
-
-# imprimir2(36)
-# imprimir2(109)
-
-# imprimir2(22)
-# imprimir2(15)
-# imprimir2(88)
-# imprimir(2)
-
-# print(root[2][2].get('nombre'))
-# print(root[2][2][1][0].text)
-# print(root[2].tag)
+print("Sistema de Drones:")
+print("..................................................")
+for sistemaDrones in root[1]:
+    print(f'(',cont3+1,')  ',root[1][cont3].get('nombre'))
+    cont3 += 1
+print("..................................................")
+num2 = int(input("Ingrese el numero del Sistema que desea utilizar: "))
+num2 -= 1    
+print("")
+cont3 = 0
 
 
 print("Mensajes:")
@@ -161,7 +99,7 @@ for instruccion in root[2][num][1]:
     cont3 += 1
 print("..................................................\n")
 
-# print(root[2][num][1].tag)
+
 os.system('cls')
 
 cont = 0
@@ -178,15 +116,13 @@ while tmp != None:
     if cont < int(tmp.nombre):
         inf = int(tmp.nombre)
         cont = inf - cont - 1
-        ref = 8 * (20 - inf) + cont3
-        # print(inf, "   ", cont)
+        ref = 8 * (20 - inf) + cont3        
         imprimir(cont)
         imprimir2(ref)        
         cont = inf
         cont3 += 1
         
-    else:        
-        # print(int(tmp.nombre))
+    else:                
         inf = int(tmp.nombre)
         ref = 8 * (20 - inf) + cont3
         imprimir2(ref)        
@@ -201,24 +137,51 @@ imprimir(2)
 
 print("..................................................")
 
-tmp = sistema
-# while tmp != None:
-#     for i in range(int(tmp.nombre) - 1):
-#         print(tmp.nombre)
-#     tmp = tmp.siguiente
-        
 
-# while tmp != None:
-#     if res < int(tmp.nombre):
-#         inf = int(tmp.nombre)
-#         res = inf - res - 1
-#         print(inf, "   ", res)        
-#         res = inf
-        
-#     else:        
-#         print(int(tmp.nombre))
-#         res += 1
-        
-#     if res3 == 8:        
-#         res3 = 1
-#     tmp = tmp.siguiente
+tiempoO = str(reloj - 3)
+nombre = (root[2][num].get('nombre'))
+
+
+# Crear el elemento raíz del XML
+root2 = ET.Element("Salida")
+
+# Crear el elemento listaMensajes
+lista_mensajes = ET.SubElement(root2, "listaMensajes")
+
+# Crear un ejemplo de mensaje
+mensaje = ET.SubElement(lista_mensajes, "mensaje", nombre = nombre)
+
+sistema_drones = ET.SubElement(mensaje, "sistemaDrones")
+sistema_drones.text = "[valorAlfanumerico]"
+
+tiempo_optimo = ET.SubElement(mensaje, "tiempoOptimo")
+tiempo_optimo.text = "[valorNumerico]"
+
+mensaje_recibido = ET.SubElement(mensaje, "mensajeRecibido")
+mensaje_recibido.text = "[valorAlfanumerico]"
+
+instrucciones = ET.SubElement(mensaje, "instrucciones")
+
+# Crear un ejemplo de tiempo y acciones dentro de instrucciones
+tiempo = ET.SubElement(instrucciones, "tiempo", valor = tiempoO)
+
+acciones = ET.SubElement(tiempo, "acciones")
+
+dron = ET.SubElement(acciones, "dron", nombre="valorAlfanumerico")
+dron.text = "[valorAccionDron]"
+
+# Puedes agregar más mensajes, tiempos y acciones según sea necesario
+
+# Crear un objeto ElementTree para representar el árbol XML
+tree = ET.ElementTree(root2)
+
+# Obtener el XML como una cadena con formato
+xml_str = ET.tostring(root2, encoding="utf-8")
+dom = minidom.parseString(xml_str)
+formatted_xml = dom.toprettyxml(indent="  ")
+
+# Guardar el archivo XML formateado en el disco
+with open("Salida.xml", "w") as xml_file:
+    xml_file.write(formatted_xml)
+
+print("Archivo XML generado con la estructura deseada.")

@@ -1,4 +1,5 @@
 import xml.etree.ElementTree as ET
+import xml.dom.minidom as minidom
 import graphviz as gv
 from nodoDrones import ListaDrones
 
@@ -38,3 +39,12 @@ while tmp != None:
     tmp = tmp.siguiente              
     cont2 += 1
 print("..................................................")
+
+
+tree = ET.ElementTree(root)
+xml_str = ET.tostring(root, encoding="utf-8")
+dom = minidom.parseString(xml_str)
+formatted_xml = dom.toprettyxml(indent="  ")
+
+with open("libreria.xml", "w") as xml_file:
+    xml_file.write(formatted_xml)

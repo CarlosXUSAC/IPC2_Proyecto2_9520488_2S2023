@@ -1,3 +1,5 @@
-print(tmp.nombre, "   ", inf - 1)
-        # res = int(tmp.nombre)  
-        # print(res)     
+mensaje.agregar(16)
+mensaje.agregar(14)
+mensaje.agregar(18)
+mensaje.agregar(20)
+mensaje.agregar(0)
