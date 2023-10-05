@@ -1,5 +1,44 @@
 import tkinter as tk
 from tkinter import *
+from tkinter import filedialog
+from tkinter import messagebox
+import xml.etree.ElementTree as ET
+from mostrar import VisorXML
+from message import Mesage
+from modificar import XMLModifier
+
+
+
+def cargar_archivo():
+    global root
+    ruta = filedialog.askopenfilename(title = "Open File", filetypes=(("XML files", "*.xml"),("all files", "*.*")))
+    try:
+        xml_file = open(ruta)        
+       
+    except Exception as err:
+        print('Error al abrir el archivo:', err)
+    finally:
+        xml_file.close()
+
+    tree = ET.parse(ruta)
+    root = tree.getroot()
+
+    VisorXML(ruta).iniciar()
+
+
+def reiniciar_variables():    
+    messagebox.showinfo("Variables Reiniciadas", "Todas las variables han sido reiniciadas")    
+    
+
+def mensaje():
+    Mesage("entradaV3a.xml").iniciar()
+
+
+def modificar(root):
+    # root = tk.Tk()
+    app = XMLModifier()
+    # root.mainloop()
+    
 
 
 def info():
@@ -47,13 +86,13 @@ def menu():
     etiqueta3 = tk.Label(root, text = "  Management  ", bg= '#8DB6CD')
     etiqueta3.grid(row = 1, column = 2)
 
-    boton1 = tk.Button(root, text= "Open XML", padx = 10)
+    boton1 = tk.Button(root, text= "Open XML", padx = 10, command = lambda: cargar_archivo())
     boton1.grid(row = 2, column = 1)
 
     boton2 = tk.Button(root, text= "Save XML", padx = 12)
     boton2.grid(row = 3, column = 1)
 
-    boton3 = tk.Button(root, text= "Clear", padx = 26)
+    boton3 = tk.Button(root, text= "Clear", padx = 26, command = lambda: reiniciar_variables())
     boton3.grid(row = 4, column = 1)
 
     boton4 = tk.Label(root, text = "    Developer    ", bg= '#8DB6CD')
@@ -65,13 +104,13 @@ def menu():
     boton6 = tk.Button(root, text= "Exit", padx = 28)
     boton6.grid(row = 7, column = 1)
 
-    boton7= tk.Button(root, text= "Drons", padx = 26)
+    boton7= tk.Button(root, text= "Drons", padx = 26, command= lambda: modificar(root))
     boton7.grid(row = 2, column = 2)
 
-    boton8= tk.Button(root, text= "Systems", padx = 20)
+    boton8= tk.Button(root, text= "Systems", padx = 20, command= lambda: modificar(root))
     boton8.grid(row = 3, column = 2)
 
-    boton9= tk.Button(root, text= "Messages", padx = 16)
+    boton9= tk.Button(root, text= "Messages", padx = 16, command= lambda: mensaje())
     boton9.grid(row = 4, column = 2)
 
     boton10= tk.Label(root, text = "          Help          ", bg= '#8DB6CD')

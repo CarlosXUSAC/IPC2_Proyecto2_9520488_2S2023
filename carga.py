@@ -3,13 +3,35 @@ import xml.dom.minidom as minidom
 import graphviz as gv
 from nodoDrones import ListaDrones
 
-tree = ET.parse('entradaV3.xml')
+
+tree = ET.parse('entradaV3d.xml')
 root = tree.getroot()
 
 cont = 0
 cont2 = 0
 orden = ListaDrones(None)
 
+
+print("Drones:")
+print("..................................................")
+for dron in root[1][0].findall('dron'):    
+    print(f'(',cont+1,')  ',root[0][cont].text)
+    orden.agregar(root[0][cont].text)
+        
+    cont += 1
+print("..................................................")
+num = int(input("Ingrese el numero del Dron que desea procesar: "))
+num -= 1    
+print("")
+
+
+tmp = orden
+print(tmp)
+# while tmp != None:
+#     print(orden[0].type)
+#     tmp = tmp.siguiente
+print("..................................................")
+    
 
 print("Drones:")
 print("..................................................")
@@ -23,11 +45,6 @@ num = int(input("Ingrese el numero del Dron que desea procesar: "))
 num -= 1    
 print("")
 
-# tmp = orden
-# while tmp != None:
-#     print("Dron: ",tmp.nombre)
-#     tmp = tmp.siguiente
-    
 
 ListaDrones.ordenar(orden)
 

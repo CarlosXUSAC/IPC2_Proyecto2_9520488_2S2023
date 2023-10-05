@@ -61,6 +61,9 @@ def imprimir2(self):
     os.system('cls')
 
 
+# n = int(root[1][2][0].text) * int(root[1][2][1].text)
+
+
 print("Sistema de Drones:")
 print("..................................................")
 for sistemaDrones in root[1]:
@@ -147,12 +150,84 @@ imprimir(2)
 print("..................................................")
 
 
+# Version 1.0
+# tmp = sistema
+# while tmp != None:
+#     if cont < int(tmp.nombre):
+#         inf = int(tmp.nombre)
+#         cont = inf - cont - 1
+#         ref = 8 * (20 - inf) + cont3        
+#         imprimir(cont)
+#         imprimir2(ref)        
+#         cont = inf
+#         cont3 += 1
+        
+#     else:                
+#         inf = int(tmp.nombre)
+#         ref = 8 * (20 - inf) + cont3
+#         imprimir2(ref)        
+#         cont += 1
+#         cont3 += 1
+        
+#     if cont3 > 8:        
+#         cont3 = 1
+#     tmp = tmp.siguiente
+
+# imprimir(2)   
+
+# print("..................................................")
+
+
+# Version 2.0
+
+# text = ''
+# cont5 = 2
+# tmp = sistema
+# while tmp != None:
+#     if cont < int(tmp.nombre):
+#         inf = int(tmp.nombre)
+#         cont = inf - cont - 1
+#         ref = 8 * (20 - inf) + cont3        
+#         # print(root[1][2][cont5][1][inf-1].text, end='')      # Mensaje: C I V I L  Q U I E N  L E A  # print(root[1][sistema][dron][1][altura].text)
+#         text = text + root[1][2][cont5][1][inf-1].text
+#         imprimir(cont)
+#         imprimir2(ref)        
+#         cont = inf
+#         cont3 += 1
+#         cont5 += 1
+        
+#     else:                
+#         inf = int(tmp.nombre)
+#         ref = 8 * (20 - inf) + cont3
+#         # print(root[1][2][cont5][1][inf-1].text, end='')      # Mensaje: C I V I L  Q U I E N  L E A  # print(root[1][sistema][dron][1][altura].text)
+#         text = text + root[1][2][cont5][1][inf-1].text
+#         imprimir2(ref)        
+#         cont += 1
+#         cont3 += 1
+#         cont5 += 1
+        
+#     if cont3 > 8:        
+#         cont3 = 1
+#     if cont5 > 9:
+#         cont5 = 2
+
+#     tmp = tmp.siguiente
+
+# # print(text)
+
+# imprimir(2) 
+
+# print("..................................................")
+
+
 tiempoO = str(reloj - 3)
 nombre = (root[2][num].get('nombre'))
 
 
+# Crear el elemento raíz del XML
 root2 = ET.Element("Salida")
 
+# Crear el elemento listaMensajes
 lista_mensajes = ET.SubElement(root2, "listaMensajes")
 
 # Crear un ejemplo de mensaje
@@ -198,3 +273,19 @@ with open("Salida.xml", "w") as xml_file:
     xml_file.write(formatted_xml)
 
 print("Archivo XML generado con la estructura deseada.")
+
+# tmp = salidaD
+# while tmp != None:
+#     print(tmp.nombre, tmp.valor)
+#     tmp = tmp.siguiente 
+
+
+# # Crear un ejemplo de tiempo y acciones dentro de instrucciones
+# tiempo = ET.SubElement(instrucciones, "tiempo", valor = "tiempo")
+
+# acciones = ET.SubElement(tiempo, "acciones")
+
+# dron = ET.SubElement(acciones, "dron", nombre="valorAlfanumerico")
+# dron.text = "[valorAccionDron]"
+
+# # Puedes agregar más mensajes, tiempos y acciones según sea necesario

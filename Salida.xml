@@ -1,14 +1,29 @@
 <?xml version="1.0" ?>
 <Salida>
   <listaMensajes>
-    <mensaje nombre="msg3">
-      <sistemaDrones>[valorAlfanumerico]</sistemaDrones>
-      <tiempoOptimo>[valorNumerico]</tiempoOptimo>
-      <mensajeRecibido>[valorAlfanumerico]</mensajeRecibido>
+    <mensaje nombre="msg">
+      <sistemaDrones>SD1</sistemaDrones>
+      <tiempoOptimo>5</tiempoOptimo>
+      <mensajeRecibido>B2VZ</mensajeRecibido>
       <instrucciones>
-        <tiempo valor="27">
+        <tiempo valor="tiempo">
           <acciones>
-            <dron nombre="valorAlfanumerico">[valorAccionDron]</dron>
+            <dron nombre="2">DronA</dron>
+          </acciones>
+        </tiempo>
+        <tiempo valor="tiempo">
+          <acciones>
+            <dron nombre="3">DronB</dron>
+          </acciones>
+        </tiempo>
+        <tiempo valor="tiempo">
+          <acciones>
+            <dron nombre="2">DronR</dron>
+          </acciones>
+        </tiempo>
+        <tiempo valor="tiempo">
+          <acciones>
+            <dron nombre="1">DronS</dron>
           </acciones>
         </tiempo>
       </instrucciones>

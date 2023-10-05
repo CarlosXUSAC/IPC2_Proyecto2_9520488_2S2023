@@ -80,7 +80,7 @@
         </sistemaDrones>
         <sistemaDrones nombre="SDG">
             <alturaMaxima>20</alturaMaxima>
-            <cantidadDrones>8</cantidadDrones>
+            <cantidadDrones>8</cantidadDrones>            
             <contenido>
                 <dron>DronA</dron>
                 <alturas>
@@ -255,8 +255,8 @@
                     <altura valor="19">J</altura>
                     <altura valor="20">Q</altura>
                 </alturas>
-            </contenido>
-            <contenido>
+            </contenido>            
+        <contenido>
                 <dron>DronZ</dron>
                 <alturas>
                     <altura valor="1">J</altura>
@@ -281,7 +281,7 @@
                     <altura valor="20">Z</altura>
                 </alturas>
             </contenido>
-        </sistemaDrones>
+            </sistemaDrones>
     </listaSistemasDrones>
     <listaMensajes>
         <Mensaje nombre="msg">

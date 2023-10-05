@@ -1,5 +1,1 @@
-mensaje.agregar(16)
-mensaje.agregar(14)
-mensaje.agregar(18)
-mensaje.agregar(20)
-mensaje.agregar(0)
+app = XMLModifier()
